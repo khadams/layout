@@ -32,7 +32,7 @@ font-family: 'Shrikhand', cursive; */
   text-align: center;
   font-family: 'Shrikhand', cursive;
   font-size: 18pt;
-  font-weight: regular, none;
+  font-weight: normal;
   padding: 20px;
   color: #2A3978;
 }
@@ -100,12 +100,12 @@ body header nav ul li a {
 
 /* Change the link color to #111 (black) on hover */
 body header nav li a:hover {
-  color: rgba(225,50,29,1.0);
+  color: rgba(178,14,14,1.0);
 }
 
 
 header nav .current {
-  color: rgba(225,50,29,1.0);
+  color: rgba(178,14,14,1.0);
   font-weight: bold;
   /* border-bottom: 2px;
   border-color: rgba(225,50,29,1.0); */
@@ -127,7 +127,7 @@ body main h2 {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-size: 16pt;
-  font-weight: semi-bold;
+  font-weight: bold;
   color: #2A3978;
 }
 
@@ -136,7 +136,7 @@ body main h3 {
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-size: 14pt;
-  font-weight: semi-bold;
+  font-weight: bold;
   color: #2A3978;
 }
 
@@ -155,7 +155,7 @@ body main ul {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-size: 11pt;
-  font-weight: regular, none;
+  font-weight: normal;
   padding: 20px;
   color: #000;
 }
@@ -166,7 +166,7 @@ body main ul li {
   list-style-position: outside;
   font-family: 'Open Sans', sans-serif;
   font-size: 11pt;
-  font-weight: regular, none;
+  font-weight: normal;
   line-height: 1.2;
   padding: 5px;
   color: #000;
@@ -234,7 +234,7 @@ footer p {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-size: 10pt;
-  font-weight: regular, none;
+  font-weight: normal;
   line-height: 1.4;
   color: #2A3978;
   padding: 4px;
@@ -271,7 +271,7 @@ footer nav li a {
 
 /* Change the link color to #111 (black) on hover */
 footer nav li a:hover {
-  color: rgba(225,50,29,1.0);
+  color: rgba(178,14,14,1.0);
 }
 
 /* Mobile layout starts here* */
@@ -303,13 +303,13 @@ footer nav li a:hover {
 }
 
 .welcome-container{
-  display: relative;
+  display: inline-block;
   flex-wrap: wrap;
   padding: 20px 0px 10px 0px;
   height: 40vh;
   width: auto;
   max-width: 380px;
-  align: center;
+  align-content: center;
   margin-left: auto;
   margin-right: auto;
   /* background-color: pink; */
@@ -355,7 +355,7 @@ footer nav li a:hover {
 .footer-container{
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 1em 1em 3em 1em;
   align-items: stretch;
   justify-content: space-between;
   background-color: #F1F2F2;
@@ -383,7 +383,7 @@ footer nav li a:hover {
   font-style: italic;
 }
 .announcement{
-  color: #E1321D;
+  color: #B20E0E;
 }
 
 .schedule h2{
@@ -391,7 +391,7 @@ footer nav li a:hover {
   font-family: 'Open Sans', sans-serif;
   font-size: 12pt;
   font-weight: bold;
-  color: #E1321D;
+  color: #B20E0E;
   text-transform: uppercase;
   padding: 18px 6px 0px 18px;
 }
@@ -417,11 +417,11 @@ footer nav li a:hover {
 }
 
 .fa.fas{
-  color:#2A3t978;
+  color:#2a3978;
 }
 
 .faq-section{
-  flex: block;
+  display: block;
   width: 100%;
   margin: 1.2em;
 }
@@ -437,7 +437,7 @@ footer nav li a:hover {
 .answer{
   font-family: 'Open Sans', sans-serif;
   font-size: 11pt;
-  font-weight: regular, none;
+  font-weight: normal;
   padding: .4em .2em 0 .4em;
   line-height: 1.4;
   list-style-type: lower-alpha;
@@ -445,7 +445,7 @@ footer nav li a:hover {
 }
 
 .about-item{
-  flex: block;
+  display: block;
   width: auto;
   margin: 1.2em;
 }
@@ -463,7 +463,7 @@ footer nav li a:hover {
 
 .gallery{
   display: grid;
-  grit-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, auto);
   grid-gap: 1em;
   margin: 1em;
